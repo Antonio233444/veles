@@ -1,0 +1,9 @@
+@import "variables"; //пишем переменные
+@import 'mixins';
+
+@import "reset"; //сборс стилей
+
+
+//подключаем БЭМ блоки
+@import "blocks/test";
+@import "blocks/header";
