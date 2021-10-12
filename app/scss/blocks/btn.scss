@@ -1,0 +1,20 @@
+.btn {
+    display: inline-block;
+    color: $secondary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 21px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    padding-right: 55px;
+    padding-left: 49px;
+    background-color: $brand-bg;
+    vertical-align: top;
+    margin-bottom: 130px;
+    transition: color 0.2s linear;
+}
+
+.btn:hover {
+    color: $primary-color;
+}
+
