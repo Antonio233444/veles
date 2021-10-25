@@ -1,21 +1,27 @@
 .header {
     background-color: $primary-bg;
+    padding-bottom: 40px;
+    position: relative;
+    overflow: hidden;
 }
 
 .header__logo {
-    margin-right: 80px;
+    margin-right: 78px;
+    flex-shrink: 0;
 }
 
 .header__container {
     display: flex;
     align-items: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 140px;
 }
 
 
 .header__contacts {
     display: flex;
+    align-items: center;
 }
 
 .nav {
@@ -27,9 +33,9 @@
 .header__nav-link {
     text-decoration: none;
     color: $primary-color;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 15px;
+    @include font(13px, 24px);
+    display: inline-block;/*для удобства?*/
+    vertical-align: top;
     text-transform: uppercase;
 }
 
@@ -47,12 +53,27 @@
     text-decoration: none;
     font-size: 13px;
     position: relative;
+    display: flex;
+    align-items: center;
+
 }
 
 .header__phone::before {
-    content: url('../img/phone.png');
-    position: absolute;
-    margin-left: -15px;
+    content: url('');
+    flex-shrink: 0;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+.phone__icon {
+
+}
+
+.location__icon {
+    
 }
 
 .header__adress {
@@ -64,20 +85,10 @@
 }
 
 .header__adress::before {
-    content: url('../img/location.png');
-    position: absolute;
-    margin-left: -15px;
+    content: url('');
+    flex-shrink: 0;
 }
 
-
-.header__title {
-    max-width: 526px;
-    color: $primary-color;
-    line-height: 31px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 51px;
-}
 
 
 

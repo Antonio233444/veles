@@ -2,9 +2,24 @@
 
 }
 
+
+
+.slider__title {
+    max-width: 526px;
+    font-size: 27px;
+    color: $primary-color;
+    line-height: 31px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 51px;
+}
+
+
+
 .slider__arrow {
     width: 24px;
-    height: 7px;
+    height: 24px;
+    display: block;/*зачем?*/
     background-color: transparent;
     border: none;
     outline : none;
@@ -17,7 +32,42 @@
 }
 
 .slider__buttons {
-    width: 131px;
-    margin-bottom: 39px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 60px;
+}
+
+
+.slider__counter {
+    font-size: 18px;
+    color: $primary-color;
+    line-height: 21px;
+    padding: 0 10px;
+}
+
+
+.slider__wrap {
+    display: flex;
+}
+
+.slider__slide {
+    display: flex;
+    gap: 47px;
+    flex-shrink: 0;/*слайд не должен сужаться,фактор уменьшения задаём ноль*/
+    width: 100%;
+}
+
+.slider__right {
+    position: absolute;
+    right: 0;
+    top: 150px;
+    width: 50%;
+}
+
+.slider__pic {
+    display: block;
+    width: 100%;
+    height: 506px;/*нужно ли снова прописывать высоту?*/
+    object-fit: cover;
 }
