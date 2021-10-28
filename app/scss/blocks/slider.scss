@@ -24,17 +24,19 @@
     border: none;
     outline : none;
     cursor: pointer;
+    width: 24px;
+    height: 24px;
 }
 
 .slider__icon {
     width: 24px;
-    height: 7px;
+    height: 24px;
 }
 
 .slider__buttons {
     display: flex;
     justify-content: flex-end;
-    width: 50%;
+    width: 50%;/*по умолчанию занимает сто процентов ширины,ставим половину*/
     padding-right: 60px;
 }
 
@@ -48,7 +50,7 @@
 
 
 .slider__wrap {
-    display: flex;
+    display: flex;/*для остальных слайдов?*/
 }
 
 .slider__slide {
@@ -59,7 +61,7 @@
 }
 
 .slider__right {
-    position: absolute;
+    position: absolute;/*позиционируем относительно хедера*/
     right: 0;
     top: 150px;
     width: 50%;
@@ -69,5 +71,5 @@
     display: block;
     width: 100%;
     height: 506px;/*нужно ли снова прописывать высоту?*/
-    object-fit: cover;
+    object-fit: cover;/*адаптив для картинки*/
 }
