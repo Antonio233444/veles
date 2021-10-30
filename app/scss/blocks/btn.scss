@@ -7,11 +7,14 @@
     padding: 19px 56px 19px 50px;
     background-color: $brand-bg;
     vertical-align: top;
-    // margin-bottom: 130px;
     transition: color 0.2s linear;
 }
 
 .btn:hover {
     color: $primary-color;
+}
+
+.header__btn {
+    margin-bottom: 130px;
 }
 
