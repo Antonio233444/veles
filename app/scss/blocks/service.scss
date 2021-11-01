@@ -4,7 +4,8 @@
 
 
 .service__container {
-    
+    padding-bottom: 80px;
+    margin-bottom: 91px;
 }
 
 .service__title {
@@ -29,6 +30,7 @@
 
 .service__item {
     background: #fff;
+    position: relative;
 }
 
 .service__item-pic {
@@ -49,4 +51,27 @@
     color: $secondary-color;
     line-height: 21px;
     padding: 45px 79px 51px 31px;
+}
+
+
+.service__item-pic {
+    
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 9px 11px 9px 10px;
+    background: $brand-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.square__img {
+    display: block;
+    width: 36px;
+    height: 36px;
 }
