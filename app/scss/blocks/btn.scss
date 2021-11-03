@@ -4,17 +4,101 @@
     text-decoration: none;
     text-transform: uppercase;
     line-height: 21px;
-    padding: 19px 56px 19px 50px;
-    background-color: $brand-bg;
     vertical-align: top;
     transition: color 0.2s linear;
+    cursor: pointer;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    text-align: center;
+    background-color: transparent;
+    transition:  background-color .3s ease;
 }
 
-.btn:hover {
+.btn--brand {
     color: $primary-color;
-}
-
-.header__btn {
+    background-color: $brand-bg;
+    padding: 19px 56px 19px 50px;
     margin-bottom: 130px;
 }
 
+.btn--brand:hover {
+   background: $body-bg;
+   color: $brand-color;
+}
+
+
+
+// .btn{
+//     display: inline-block;
+//     vertical-align: top;
+//     cursor: pointer;
+//     text-decoration: none;
+//     border: 1px solid;
+//     border-color: transparent;
+//     border-radius: 0;
+//     box-shadow: none;
+//     text-align: center;
+//     background-color: transparent;
+//     font-family: Arial;
+//     line-height: 24px;
+//     overflow: hidden;
+//     text-overflow: ellipsis;
+//     white-space: nowrap;
+//     min-width: 120px;
+//     transition: opacity .2s ease, border-color .2s ease, background-color .2s ease;
+// }
+
+// .btn[disabled], .btn._disabled{
+//     pointer-events: none;
+//     cursor: default;
+//     opacity: .6;
+// }
+
+// .btn--rounded-sm{
+//     border-radius: 4px;
+// }
+// .btn--rounded-md{
+//     border-radius: 8px;
+// }
+
+// .btn--rounded-lg{
+//     border-radius: 16px;
+// }
+
+// .btn--fixed{
+//     width: 200px;
+// }
+
+// .btn--normal{
+//     padding: 9px 20px;
+//     font-size: 16px;
+// }
+
+// .btn--large{
+//     padding: 24px 40px;
+//     font-size: 16px;
+// }
+
+// .btn--brand{
+//     background-color: yellow;
+//     border-color: yellow;
+//     color: #333;
+// }
+
+// .btn--brand:hover{
+//     background-color: red;
+//     border-color: red;
+// }
+
+
+// .btn--outline-brand{
+//     border-color: yellow;
+//     color: #fff;
+// }
+
+// .btn--outline-brand:hover{
+//     border-color: red;
+// }

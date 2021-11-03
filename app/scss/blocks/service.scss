@@ -9,9 +9,7 @@
 }
 
 .service__title {
-    font-size: 30px;
-    font-weight: 600px;
-    line-height: 35px;
+    @include font(30px, 35px, 600);
     color: $title-color;
     text-align: center;
     margin-bottom: 70px;
@@ -33,6 +31,12 @@
     position: relative;
 }
 
+
+.service__item:hover {
+    transform: translateY(-50px);
+    transition: all .5s ease;
+}
+
 .service__item-pic {
     display: block;
     object-fit: cover;
@@ -43,10 +47,8 @@
 
 
 .service__item-text {
-    font-size: 18px;
-    font-weight: 600;
+    @include font(18px, 21px, 600);
     color: $secondary-color;
-    line-height: 21px;
     padding: 45px 79px 51px 31px;
 }
 
@@ -55,7 +57,9 @@
     
 }
 
-.square {
+
+
+.square{
     position: absolute;
     top: 0;
     left: 0;
@@ -67,8 +71,13 @@
 }
 
 
+
+
 .square__img {
     display: block;
     width: 36px;
     height: 36px;
 }
+
+
+

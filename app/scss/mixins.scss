@@ -3,8 +3,8 @@
     height: $height;
 }
 
-@mixin font($font-size, $line-height, $font-weight: null, $font-family: $basic-family){
-    font: $font-weight #{$font-size}/#{$line-height} $font-family;
+@mixin font ($fz, $lh, $fw: null, $ff: $basic-family){
+    font: $fw #{$fz}/#{$lh} $ff;
 }
 
 //breakpoints
@@ -25,3 +25,4 @@
         @content;
     }
 }
+

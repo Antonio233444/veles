@@ -6,11 +6,9 @@
 
 .slider__title {
     max-width: 526px;
-    font-size: 27px;
+    @include font(27px, 31px, 700);
     color: $primary-color;
-    line-height: 31px;
     text-transform: uppercase;
-    font-weight: 700;
     margin-bottom: 51px;
 }
 
@@ -24,8 +22,6 @@
     border: none;
     outline : none;
     cursor: pointer;
-    width: 24px;
-    height: 24px;
 }
 
 .slider__icon {
@@ -42,9 +38,8 @@
 
 
 .slider__counter {
-    font-size: 18px;
+    @include font(18px, 21px);
     color: $primary-color;
-    line-height: 21px;
     padding: 0 10px;
 }
 
