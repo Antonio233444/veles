@@ -70,13 +70,35 @@
     align-items: center;
 }
 
-
+.square:hover .square__text {
+    opacity: 1;
+    transform: translateX(44px);
+}
 
 
 .square__img {
     display: block;
     width: 36px;
     height: 36px;
+    position: relative;
+    z-index: 1;
+}
+
+.square__text {
+    background: $brand-bg;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    font: 16px/24px Arial, sans-serif;
+    padding: 10px;
+    opacity: 0;
+    transition: transform .2s ease, opacity .2s ease;
+    pointer-events: none;
+    max-width: 240px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 
