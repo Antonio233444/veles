@@ -1,11 +1,12 @@
 .container {
-    max-width: 1115px;
+    max-width: 1212px;
     margin: 0 auto;
     padding-right: 20px;
     padding-left: 20px;
 }
 
-.container--wide {
-    max-width: 1220px;
+.container--narrow {
+    max-width: 1025px;
     margin: 0 auto;
+    padding: 12px 18px;
 }

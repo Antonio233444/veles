@@ -3,7 +3,8 @@
     color: $secondary-color;
     text-decoration: none;
     text-transform: uppercase;
-    line-height: 21px;
+    // line-height: 21px;
+    @include font(18px, 21px);
     vertical-align: top;
     transition: color 0.2s linear;
     cursor: pointer;
@@ -18,9 +19,9 @@
 }
 
 .btn--brand {
-    color: $primary-color;
+    color: $secondary-color;
     background-color: $brand-bg;
-    padding: 19px 56px 19px 50px;
+    padding: 19px 63px 19px 58px;
     margin-bottom: 130px;
 }
 

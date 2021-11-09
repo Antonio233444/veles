@@ -7,13 +7,13 @@
     @include font(30px, 35px, 600);
     text-align: center;
     color: $title-color;
-    margin-bottom: 84px;
+    margin-bottom: 62px;
 }
 
 .advantages__body {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
-    grid-gap: 100px;
+    grid-gap: 90px;
 }
 
 .advantages__item {
