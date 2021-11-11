@@ -36,7 +36,7 @@
     <button class="btn btn--normal btn--outline-brand">button</button> -->
     <!-- <a href="#" class="btn btn--normal btn--outline-brand">button</a> -->
     <!-- <picture>
-        <source media="(min-width: 415px)" srcset="../img/main.png">
+        <source media="(min-width: 415px)" srcset="../img/Main.png">
         <img class="test" src="../img/mobile.png" alt="">
     </picture>
     <style>
@@ -79,6 +79,11 @@
                     </svg>
                     <div class="header__adress">г.Казань,Складская 20</div>
                 </div>
+                <button type="button" class="burger" aria-label="Открыть меню">
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                    <span class="burger__item"></span>
+                </button>
             </div>
             <div class="container">
                 <div class="slider">
@@ -219,79 +224,63 @@
     <section class="advantages advantages__container">
         <div class="container container--narrow">
             <h2 class="advantages__title">Наши преимущества</h2>
-            <div class="advantages__body">
-                <div class="advantages__item">
+            <ul class="advantages__body">
+                <li class="advantages__item">
                     <div class="advantages__item-body">
                         <div class="advantages__number">01</div>
                         <div class="advantages__text">11,5 га площадь<br> базы</div>
                     </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">02</div>
-                            <div class="advantages__text">2 своих<br> тепловоза</div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">02</div>
+                        <div class="advantages__text">2 своих<br> тепловоза</div>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">03</div>
+                        <div class="advantages__text">Повышенный путь<br> для выгрузки<br> инертных грузов</div>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">04</div>
+                        <div class="advantages__text">8 км от<br> центра Казани</div>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">05</div>
+                        <div class="advantages__text">Возможность<br> выгрузки хопров<br> и сыпучих грузов</div>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">06</div>
+                        <div class="advantages__text">Железнодорожные<br> весы на 2 вагона</div>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">07</div>
+                        <div class="advantages__text">Автомобильные<br> весы 18м на 80 тонн</div>
+                    </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">08</div>
+                        <div class="advantages__text">3 пандуса для выгрузки<br> и загрузки крытых<br> вагонов и фур
                         </div>
                     </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">03</div>
-                            <div class="advantages__text">Повышенный путь<br> для выгрузки<br> инертных грузов</div>
-                        </div>
+                </li>
+                <li class="advantages__item">
+                    <div class="advantages__item-body">
+                        <div class="advantages__number">09</div>
+                        <div class="advantages__text">Козловой<br> кран</div>
                     </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">04</div>
-                            <div class="advantages__text">8 км от<br> центра Казани</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">05</div>
-                            <div class="advantages__text">Возможность<br> выгрузки хопров<br> и сыпучих грузов</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">06</div>
-                            <div class="advantages__text">Железнодорожные<br> весы на 2 вагона</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">07</div>
-                            <div class="advantages__text">Автомобильные<br> весы 18м на 80 тонн</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">08</div>
-                            <div class="advantages__text">3 пандуса для выгрузки<br> и загрузки крытых<br> вагонов и фур
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="advantages__item">
-                    <div class="advantages__item">
-                        <div class="advantages__item-body">
-                            <div class="advantages__number">09</div>
-                            <div class="advantages__text">Козловой<br> кран</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </section>
     <section class="map map__container">
