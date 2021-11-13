@@ -2,18 +2,14 @@
 
 }
 
-@media screen and (max-width: 576px) {
-    .slider{
 
-    }
-}
 
 .slider__title {
     max-width: 526px;
     @include font(27px, 31px, 700);
     color: $primary-color;
     text-transform: uppercase;
-    margin-bottom: 108px;
+    margin-bottom: 50px;
 }
 
 .slider__arrow {
@@ -57,21 +53,21 @@
 
 .slider__right {
     position: absolute;/*позиционируем относительно хедера*/
-    right: 0;
-    top: 227px;
-    width: 50%;
+    right: 0;/*прибиваем элемент к правому краю страницы*/
+    top: 180px;
+    width: 50%;/*элемент будет занимать половину слайдера*/
     overflow: hidden;
 }
 
 .slider__pic {
     display: block;
-    width: 100%;
+    width: 100%;/*картинка будет занимать сто процентов ширины контейнера*/
     height: 506px;/*нужно ли снова прописывать высоту?*/
     object-fit: cover;/*адаптив для картинки*/
 }
 
-@media screen and (max-width: 576px) {
-    .slider__left {
-        max-width: 265px;
-    }
-}
+// @media screen and (max-width: 576px) {
+//     .slider__left {
+//         max-width: 265px;
+//     }
+// }

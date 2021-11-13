@@ -1,0 +1,50 @@
+.rent {
+
+}
+
+.rent__container {
+    
+}
+
+.rent__body {
+    display: flex;
+}
+
+.rent__description {
+
+
+}
+
+.rent__title {
+    @include font(30px, 35px, 700);
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.rent__text {
+    @include font(15px, 17px);
+    max-width: 430px;
+    margin-right: 90px;
+    margin-bottom: 40px;
+}
+
+
+.rent__image {
+    // align-self: flex-start;
+    position: relative;
+}
+
+.rent__block {
+    width: 547px;
+    height: 487px;
+    background: $section-bg;
+}
+
+.rent__pic {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 66px;
+    left: 60px;
+}
