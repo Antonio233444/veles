@@ -3,6 +3,10 @@
     background-color: $body-bg; 
 }
 
+.body--lock{
+    overflow: hidden;
+}
+
 .wrapper {
     background: $section-bg;
 }

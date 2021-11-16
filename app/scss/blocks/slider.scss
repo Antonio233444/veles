@@ -2,6 +2,9 @@
 
 }
 
+.slider__wrap{
+    overflow: hidden;
+}
 
 
 .slider__title {
@@ -32,6 +35,10 @@
     justify-content: flex-end;
     width: 50%;/*по умолчанию занимает сто процентов ширины,ставим половину*/
     padding-right: 60px;
+    @include tablet{
+        width: 100%;
+        padding-right: 0;
+    }
 }
 
 .slider__counter {
@@ -57,6 +64,24 @@
     top: 180px;
     width: 50%;/*элемент будет занимать половину слайдера*/
     overflow: hidden;
+    @include tablet{
+        left: 0;
+        bottom: 0;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+
+        &:after{
+            content: ' ';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            top: 0;
+            right: 0;
+            background-color: #000;
+            opacity: .5;
+        }
+    }
 }
 
 .slider__pic {
@@ -64,6 +89,9 @@
     width: 100%;/*картинка будет занимать сто процентов ширины контейнера*/
     height: 506px;/*нужно ли снова прописывать высоту?*/
     object-fit: cover;/*адаптив для картинки*/
+    @include tablet{
+       height: 100%;
+    }
 }
 
 // @media screen and (max-width: 576px) {

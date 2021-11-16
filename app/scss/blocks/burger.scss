@@ -1,11 +1,3 @@
-
-@media screen and (max-width: 576px) {
-    .burger {
-        display: block;
-    }
-}
-
-
 .burger {
     width: 24px;
     height: 24px;
@@ -14,6 +6,7 @@
     cursor: pointer;
     position: relative;
     display: none;
+    flex-shrink: 0;
 }
 
 .burger__item {
