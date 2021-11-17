@@ -38,13 +38,18 @@
     }
 }
 
-
+.header__logo {
+    @include tablet {
+        z-index: 1000;
+    }
+}
 
 
 .header__logo {
     margin-right: 78px;
     flex-shrink: 0;
 }
+
 
 .header__container {
     display: flex;
@@ -117,8 +122,18 @@
     }
 }
 
+
+
 .header__burger._active{
     z-index: 1000; 
+}
+
+
+
+.header__nav .nav__list {
+    @include tablet {
+        flex-direction: column;
+    }
 }
 
 

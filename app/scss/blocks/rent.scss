@@ -28,15 +28,27 @@
 }
 
 
-.rent__image {
-    // align-self: flex-start;
-    position: relative;
-}
+// .rent__image {
+//     position: relative;
+// }
+
 
 .rent__block {
     width: 547px;
     height: 487px;
     background: $section-bg;
+    position: relative;
+    z-index: -1;
+}
+
+.rent__block::after {
+    content: '';
+    position: absolute;
+    // top: 30px;
+    // left: 30px;
+    // background: url('../img/rent-img.png');
+    // display: inline-block;
+    // z-index: 1;
 }
 
 .rent__pic {
