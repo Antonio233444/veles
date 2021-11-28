@@ -30,7 +30,7 @@
     </svg>
 </head>
 
-<body class="body">
+<body class="body js-body">
     <!-- <button class="btn--fixed btn btn--normal btn--brand">button</button>
     <a href="#" class="_disabled btn btn--normal btn--brand">button</a>
     <button class="btn btn--normal btn--outline-brand">button</button> -->
@@ -57,11 +57,11 @@
     </style> -->
     <div class="wrapper">
         <header class="header">
-            <div class=" header__container container">
+            <div class="header__container container">
                 <a href="#" class="header__logo logo">
                     <img src="img/logo.svg" class="img logo__img" width="96" height="36" alt="Logo">
                 </a>
-                <nav class="nav header__nav _active">
+                <nav class="nav header__nav js-nav">
                     <ul class="nav__list">
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Земля</a></li>
                         <li class="header__nav-item"><a href="#" class="header__nav-link">Крановые площадки</a></li>
@@ -86,7 +86,7 @@
                         г.Казань,Складская 20
                     </div>
                 </div>
-                <button type="button" class="header__burger burger _active" aria-label="Открыть меню">
+                <button type="button" class="header__burger burger js-burger" aria-label="Открыть меню">
                     <span class="burger__item"></span>
                     <span class="burger__item"></span>
                     <span class="burger__item"></span>
@@ -228,8 +228,8 @@
             </div>
         </div>
     </div>
-    <section class="advantages advantages__container">
-        <div class="container container--narrow">
+    <section class="advantages advantages__container--narrow">
+        <div class="container">
             <h2 class="advantages__title">Наши преимущества</h2>
             <ul class="advantages__body">
                 <li class="advantages__item">
@@ -307,17 +307,96 @@
                         собственных тепловоза. Есть железнодорожные
                         и автомобильные весы, козловой кран, повышенный
                         путь, пандусы для выгрузки крытых вагонов и фур.</div>
-                    <a href="#" class="btn btn__rent">Получить консультацию</a>
+                    <a href="#" class="btn btn__rent" aria-label="Получить консультацию">Получить консультацию</a>
                 </div>
                 <div class="rent__block">
-                    <!-- <div class="rent__image">
-                        <img src="/img/rent-img.png" alt="Аренда земли" class="rent__pic">
-                    </div> -->
+                    <img src="img/rent-img.png" alt="Аренда земли" class="rent__block-img">
                 </div>
             </div>
         </div>
     </div>
-    <script src=""></script>
+    <div class="storage storage__container">
+        <div class="container">
+            <div class="storage__wrap">
+                <div class="storage__description">
+                    <div class="storage__description-title">Аренда складов</div>
+                    <div class="storage__description-text">Предлагаем в аренду крытые и открытые складские и
+                        производственные площадки. Склады комплекса оснащены погрузочно-разгрузочной техникой. Открытые
+                        складские площадки приспособлены и для хранения негабаритных грузов. Собственный ж.д. подъездной
+                        путь. Охраняемая территория, удобные подъездные пути для любых видов транспорта. На закрытой
+                        территории базы обеспечивается функционирование всех инженерных сетей.</div>
+                    <a href="#" class="btn btn__storage" aria-label="Получить консультацию">Получить консультацию</a>
+                </div>
+                <div class="storage__image">
+                    <img src="img/storage.jpg" class="storage__pic" width="959" height="570" alt="Аренда земли">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="feedback feedback__container--narrow">
+        <div class="container">
+            <div class="feedback__title">
+                УЗНАТЬ О ЦЕНАХ, ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ
+                ИЛИ ПЕРСОНАЛЬНОЕ ПРЕДЛОЖЕНИЕ
+            </div>
+            <div class="feedback__form">
+                <div class="feedback__form-body">
+                    <div class="form__name">
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="Имя" class="name__input">
+                        </label>
+                    </div>
+                    <div class="form__number">
+                        <label for="phone">
+                            <input type="tel" id="tel" name="phone" placeholder="Телефон" class="phone__input">
+                        </label>
+                    </div>
+                    <a href="#" class="btn form__btn">Отправить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__container container">
+            <a href="#" class="footer__logo logo">
+                <img src="img/logo.svg" class="img logo__img" width="96" height="36" alt="Logo">
+            </a>
+            <nav class="nav footer__nav js-nav">
+                <ul class="nav__list">
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Земля</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Крановые площадки</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Выгрузка вагонов</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Фасовка</a></li>
+                    <li class="footer__nav-item"><a href="#" class="footer__nav-link">Щебень</a></li>
+                </ul>
+
+            </nav>
+            <div class="footer__contacts">
+                <a href="tel:+7(927)678-45-14" class="footer__contacts-item footer__contacts-item--phone">
+                    <svg role="img" aria-label="трубка телефона" class="footer__contacts-icon">
+                        <use xlink:href="#phone" />
+                    </svg>
+                    +7(927)-678-45-14
+                </a>
+                <div class="footer__contacts-item footer__contacts-item--adress">
+                    <svg role="img" aria-label="точка на карте" class="footer__contacts-icon">
+                        <use xlink:href="#location" />
+                    </svg>
+                    г.Казань,Складская 20
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const burger = document.querySelector('.js-burger');
+        const body = document.querySelector('.js-body');
+        const nav = document.querySelector('.js-nav');
+        burger.addEventListener('click', () => {
+            burger.classList.toggle('_active');
+            body.classList.toggle('_lock');
+            nav.classList.toggle('_active');
+        })
+    </script>
 </body>
 
 </html>

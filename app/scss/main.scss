@@ -1,12 +1,13 @@
 @import "variables"; //пишем переменные
-@import 'mixins';
+@import 'mixins';// пишем миксины
 
-@import "reset"; //сборс стилей
+@import "reset"; //сброс стилей
 
 
 //подключаем БЭМ блоки
 @import "blocks/body";
 @import "blocks/container";
+@import "blocks/wrapper";
 @import "blocks/burger.scss";
 @import "blocks/nav";
 @import "blocks/header";
@@ -15,6 +16,8 @@
 @import "blocks/service";
 @import "blocks/advantages.scss";
 @import "blocks/map.scss";
-
 @import "blocks/rent.scss";
+@import "blocks/storage.scss";
+@import "blocks/feedback.scss";
+@import "blocks/footer.scss";
 

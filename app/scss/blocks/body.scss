@@ -1,12 +1,9 @@
 .body {
     font-family: $basic-family;
     background-color: $body-bg; 
+    &._lock{
+        overflow: hidden;
+    }
 }
 
-.body--lock{
-    overflow: hidden;
-}
 
-.wrapper {
-    background: $section-bg;
-}

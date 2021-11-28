@@ -1,0 +1,53 @@
+.feedback {
+   
+}
+
+
+.feedback__title {
+    color: $secondary-color;
+    @include font(25px, 30px, 700);
+    text-transform: uppercase;
+    max-width: 703px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 31px;
+}
+
+
+.feedback__form-body {
+    display: flex;
+}
+
+
+.form__name, .form__number {
+    margin-right: 15px;
+}
+
+
+.form__btn {
+    color: $primary-color;
+    @include font(12px,14px);
+    background-color: $primary-bg;
+    padding: 18px 44px 17px 46px;
+    
+}
+
+
+.name__input {
+    padding: 18px 198px 18px 20px;
+    background-color: $input-bg;
+    border: none;
+    outline: none;
+    @include font(16px, 18px);
+    opacity: .5;
+}
+
+
+.phone__input {
+    padding: 18px 164px 18px 20px;
+    background-color: $input-bg;
+    border: none;
+    outline: none;
+    @include font(16px, 18px);
+    opacity: .5;
+}

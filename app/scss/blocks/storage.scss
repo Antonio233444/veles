@@ -1,0 +1,54 @@
+.storage {
+   
+}
+
+
+.storage__wrap {
+    display: flex;
+
+}
+
+
+.storage__container {
+    background-color: $primary-bg;
+    padding-bottom: 109px;
+    padding-top: 133px;
+    position: relative;
+    margin-bottom: 300px;
+}
+
+
+.storage__image {
+    position: absolute;
+    top: 133px;
+    right: 0;
+    width: 50%;
+}
+
+
+.storage__pic {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 570px;
+}
+
+.storage__description {
+  margin-right: 87px;
+}
+
+
+.storage__description-title {
+    color: $primary-color;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    @include font(30px, 35px, 700);
+}
+
+
+.storage__description-text {
+    max-width: 493px;
+    margin-bottom: 40px;
+    color: $primary-color;
+    @include font(15px, 18px);
+}

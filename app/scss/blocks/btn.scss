@@ -37,6 +37,16 @@
 }
 
 
+
+.btn__storage {
+    @include font(12px, 14px, 700);
+    color: $primary-color;
+    background-color: $primary-bg;
+    padding: 21px 30px 17px 30px;
+    border: 1px solid $primary-color;
+}
+
+
 // .btn{
 //     display: inline-block;
 //     vertical-align: top;
