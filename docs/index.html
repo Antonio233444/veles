@@ -290,10 +290,12 @@
             </ul>
         </div>
     </section>
-    <section class="map map__container">
-        <div class="container">
+    <section class="map">
+        <div class="map__container container">
             <h2 class="map__title">Карта территорий</h2>
-            <img src="img/main-map.png" alt="Карта территории" class="map_img">
+            <div class="map__image">
+                <img src="img/main-map.png" width="1109" height="692" alt="Карта территории" class="map__pic">
+            </div>
         </div>
     </section>
     <div class="rent rent__container">
@@ -341,17 +343,17 @@
             </div>
             <div class="feedback__form">
                 <div class="feedback__form-body">
-                    <div class="form__name">
+                    <div class="form__item form__name">
                         <label for="name">
                             <input type="text" name="name" id="name" placeholder="Имя" class="name__input">
                         </label>
                     </div>
-                    <div class="form__number">
+                    <div class="form__item  form__number">
                         <label for="phone">
                             <input type="tel" id="tel" name="phone" placeholder="Телефон" class="phone__input">
                         </label>
                     </div>
-                    <a href="#" class="btn form__btn">Отправить</a>
+                    <a href="#" class="btn form__btn" aria-label="Отправить форму">Отправить</a>
                 </div>
             </div>
         </div>

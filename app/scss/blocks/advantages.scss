@@ -14,10 +14,14 @@
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-gap: 90px;
-    // grid-row-gap: 20px;
-    // grid-column-gap: 20px;
     counter-reset: items;
     list-style-type: none;
+}
+
+@media screen and(max-width: 576px) {
+    .advantages__body {
+        grid-template-columns: repeat(2 , 1fr);
+    }
 }
 
 .advantages__item {

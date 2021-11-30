@@ -116,4 +116,11 @@
     .service__title {
         text-align: center;
     }
+
+    .service__item-text {
+        text-align: center;
+    }
+    .service__item:hover {
+        transform: none;
+    }
 }
