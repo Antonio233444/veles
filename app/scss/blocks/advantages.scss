@@ -7,7 +7,7 @@
     @include font(30px, 35px, 600);
     text-align: center;
     color: $title-color;
-    margin-bottom: 110px;
+    margin-bottom: 19px;
 }
 
 .advantages__body {
@@ -29,7 +29,7 @@
     &:before {
         counter-increment: items;
         content: counter(items);
-        @include font(100px , 94px);
+        @include font(80px , 94px, 600);
         color: #00000008;
         position: relative;
         top: 20px;
@@ -50,5 +50,8 @@
     margin-right: 40px;
     background: $brand-bg;
     padding: 14px 10px 13px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
