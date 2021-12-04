@@ -7,8 +7,9 @@
     @include font(30px, 35px, 600);
     text-align: center;
     color: $title-color;
-    margin-bottom: 19px;
+    margin-bottom: 46px;
 }
+
 
 .advantages__body {
     display: grid;
@@ -20,12 +21,11 @@
 
 @media screen and(max-width: 576px) {
     .advantages__body {
-        grid-template-columns: repeat(2 , 1fr);
+        grid-template-columns: repeat(1 , 1fr);
     }
 }
 
 .advantages__item {
-
     &:before {
         counter-increment: items;
         content: counter(items);
@@ -38,10 +38,16 @@
 }
 
 
+@media screen and(max-width: 576px) {
+    &:before {
+        display: none;
+    }
+}
+
+
 .advantages__item-body {
     display: flex;
 }
-
 
 
 .advantages__number {

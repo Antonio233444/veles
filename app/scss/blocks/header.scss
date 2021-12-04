@@ -70,7 +70,7 @@
     }
 }
 
-.header__nav-link {
+.nav__item-link {
     text-decoration: none;
     color: $primary-color;
     @include font(13px, 24px);
@@ -79,7 +79,7 @@
     text-transform: uppercase;
 }
 
-.header__nav-item {
+.nav__item {
     margin-right: 42px;
     @include tablet{
         margin-right: 0;
@@ -87,7 +87,7 @@
     }
 }
 
-.header__nav-item:last-child {
+.nav__item:last-child {
     margin-right: 0;
 }
 

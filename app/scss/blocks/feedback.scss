@@ -26,7 +26,7 @@
 
 .form__btn {
     color: $primary-color;
-    @include font(12px,14px);
+    @include font(12px,14px,600);
     background-color: $primary-bg;
     padding: 18px 44px 17px 46px;
     
