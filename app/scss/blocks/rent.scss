@@ -12,10 +12,23 @@
 
 }
 
+@media screen and(max-width: 576px) {
+    .rent__body {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+}
+
 
 .rent__description {
     align-self: center;
     margin-right: 90px;
+}
+
+@media screen and(max-width: 576px) {
+    .rent__description {
+        margin-right: 0;
+    }
 }
 
 
@@ -23,6 +36,12 @@
     @include font(30px, 35px, 700);
     text-transform: uppercase;
     margin-bottom: 25px;
+}
+
+@media screen and(max-width: 576px) {
+    .rent__title {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -33,9 +52,24 @@
     margin-bottom: 40px;
 }
 
+@media screen and(max-width: 576px) {
+    .rent__text {
+        margin-right: 0;
+    }
+}
+
 
 .rent__block {
     box-shadow: -60px -66px 0px $shadow-color;
+}
+
+
+
+@media screen and(max-width: 576px) {
+    .rent__block {
+        box-shadow: none;
+        margin-bottom: 18px;
+    }
 }
 
 
@@ -47,31 +81,5 @@
 }
 
 
-.rent__pic {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 66px;
-    left: 60px;
-}
 
-
-// .rent__block {
-//     width: 547px;
-//     height: 487px;
-//     background: $section-bg;
-//     position: relative;
-//     z-index: 1;
-// }
-
-// .rent__block::after {
-//     content: url('/img/rent-img.png');
-//     width: 547px;
-//     height: 487px;
-//     position: absolute;
-//     top: 66px;
-//     left: 60px;
-//     z-index: 3;
-// }
 

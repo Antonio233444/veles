@@ -36,6 +36,13 @@
     padding: 21px 30px 17px 30px;
 }
 
+@media screen and(max-width: 576px) {
+    .btn__rent {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
 
 
 .btn__storage {
@@ -44,6 +51,12 @@
     background-color: $primary-bg;
     padding: 21px 30px 17px 30px;
     border: 1px solid $primary-color;
+}
+
+@media screen and(max-width: 576px) {
+    .btn__storage {
+        width: 100%;
+    }
 }
 
 
