@@ -1,5 +1,5 @@
 .service {
- 
+    
 }
 
 
@@ -48,6 +48,7 @@
 
 .service__item-text {
     @include font(18px, 21px, 600);
+    text-transform: uppercase;
     color: $secondary-color;
     padding: 63px 79px 51px 31px;
 }
