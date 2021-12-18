@@ -13,6 +13,9 @@
     text-align: center;
     background-color: transparent;
     transition:  background-color .3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .btn--brand {
@@ -21,6 +24,7 @@
     padding: 19px 63px 19px 58px;
     margin-bottom: 73px;
     @include font(18px, 21px);
+    max-width: 220px;
 }
 
 .btn--brand:hover {
@@ -34,6 +38,7 @@
     color: $primary-color;
     background-color: $primary-bg;
     padding: 21px 30px 17px 30px;
+    max-width: 250px;
 }
 
 @media screen and(max-width: 576px) {
@@ -51,6 +56,7 @@
     background-color: $primary-bg;
     padding: 21px 30px 17px 30px;
     border: 1px solid $primary-color;
+    max-width: 250px;
 }
 
 @media screen and(max-width: 576px) {

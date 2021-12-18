@@ -30,7 +30,7 @@
 
 
 
-@media screen and(max-width: 758px) {
+@media screen and(max-width: $tablet) {
     .advantages__body-column {
         width: 50%;
     }
@@ -40,7 +40,7 @@
     }
 }
 
-@media screen and(max-width: 576px) {
+@media screen and(max-width: $mobile) {
     .advantages__body-column {
         width: 100%;
     }
@@ -61,7 +61,7 @@
 }
 
 
-@media screen and(max-width: 576px) {
+@media screen and(max-width: $mobile) {
     &:before {
         display: none;
     }

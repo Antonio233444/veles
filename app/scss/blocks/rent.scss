@@ -7,12 +7,14 @@
     margin-bottom: 100px;
 }
 
+
 .rent__body {
     display: flex;
 
 }
 
-@media screen and(max-width: 576px) {
+
+@media screen and(max-width: $mobile) {
     .rent__body {
         flex-direction: column-reverse;
         text-align: center;
@@ -25,7 +27,8 @@
     margin-right: 90px;
 }
 
-@media screen and(max-width: 576px) {
+
+@media screen and(max-width: $mobile) {
     .rent__description {
         margin-right: 0;
     }
@@ -38,7 +41,8 @@
     margin-bottom: 25px;
 }
 
-@media screen and(max-width: 576px) {
+
+@media screen and(max-width: $mobile) {
     .rent__title {
         margin-bottom: 20px;
     }
@@ -52,7 +56,7 @@
     margin-bottom: 40px;
 }
 
-@media screen and(max-width: 576px) {
+@media screen and(max-width: $mobile) {
     .rent__text {
         margin-right: 0;
     }
@@ -64,8 +68,7 @@
 }
 
 
-
-@media screen and(max-width: 576px) {
+@media screen and(max-width: $mobile) {
     .rent__block {
         box-shadow: none;
         margin-bottom: 18px;

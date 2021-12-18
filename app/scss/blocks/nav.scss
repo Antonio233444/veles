@@ -4,13 +4,15 @@
     // margin-right: 30px;
 }
 
-@media screen and(max-width: 576px) {
+
+@media screen and(max-width: $mobile) {
     .nav {
         text-align: center;
     }
 }
 
-@media screen and(max-width: 576px) {
+
+@media screen and(max-width: $mobile) {
     .nav__item:not(:last-child) {
         margin-right: 0;
     }
