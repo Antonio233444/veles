@@ -1,4 +1,7 @@
-
+.storage {
+    background-color: $primary-bg;
+    position: relative;
+}
 
 .storage__wrap {
     display: flex;
@@ -6,10 +9,8 @@
 
 
 .storage__container {
-    background-color: $primary-bg;
     padding-bottom: 93px;
     padding-top: 207px;
-    position: relative;
     margin-bottom: 191px;
 }
 
@@ -89,3 +90,4 @@
        text-align: center;
     }
 }
+
