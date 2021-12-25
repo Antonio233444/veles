@@ -24,8 +24,13 @@
     color: $primary-color;
     @include font(12px,14px,600);
     background-color: $primary-bg;
-    padding: 18px 44px 17px 46px;
-    
+    padding: 18px 44px 17px 46px; 
+}
+
+
+.form__btn:hover {
+    background: $body-bg;
+    color: $title-color;
 }
 
 
@@ -38,7 +43,7 @@
     opacity: .5;
 }
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .feedback__form-body {
         display: block;
     }

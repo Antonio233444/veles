@@ -1,6 +1,7 @@
 
 .service__container {
     margin-bottom: 98px;
+    padding-bottom: 79px;
 }
 
 
@@ -19,6 +20,13 @@
 }
 
 
+@include tablet {
+    .service__body {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+
+
 .service__body-link {
     text-decoration: none;
 }
@@ -27,12 +35,12 @@
 .service__item {
     background: #fff;
     position: relative;
+    transition: all .5s ease-in;
 }
 
 
 .service__item:hover {
     transform: translateY(-50px);
-    transition: all .5s ease;
 }
 
 .service__item-pic {
@@ -102,7 +110,7 @@
 
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .service__body {
         grid-template-columns: repeat(1 , 1fr);
     }

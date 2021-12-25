@@ -10,7 +10,7 @@
     padding-bottom: 59px;
 }
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .footer__container {
         flex-direction: column;
     }
@@ -23,7 +23,7 @@
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .footer__logo {
        margin: 0 auto;
         margin-bottom: 40px;
@@ -37,7 +37,7 @@
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .nav__list {
         flex-direction: column;
     }
@@ -68,6 +68,7 @@
 
 .footer__contacts-item--adress {
     color: $primary-color;
+    margin-right: 0;
 }
 
 
@@ -82,7 +83,7 @@
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .footer__nav-item {
         text-align: center;
         margin-right: 0;
@@ -101,7 +102,7 @@
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .footer__contacts {
         display: none;
     }

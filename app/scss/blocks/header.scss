@@ -74,7 +74,7 @@
     text-decoration: none;
     color: $primary-color;
     @include font(13px, 24px);
-    display: inline-block;/*для удобства?*/
+    display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
 }
@@ -85,6 +85,12 @@
         margin-right: 0;
         margin-bottom: 40px;
     }
+}
+
+@media screen and(max-width: 1112px) {
+   .nav__item {
+      margin-right: 0;
+   }
 }
 
 .nav__item:last-child {

@@ -23,8 +23,14 @@
     margin-bottom: 79px;
 }
 
+@include tablet {
+    .advantages__item {
+        width: 50%;
+    }
+}
 
-@media screen and(max-width: $mobile) {
+
+@include mobile {
     .advantages__item {
         width: 100%;
         justify-content: flex-start;
@@ -41,13 +47,13 @@
         @include font(80px , 94px, 600);
         color: #00000008;
         position: absolute;
-        top: 20px;
+        bottom: 40px;
         left: 100px;
     }
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     &:before {
         display: none;
     }
