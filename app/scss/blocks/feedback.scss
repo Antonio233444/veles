@@ -20,15 +20,16 @@
 }
 
 
-.form__btn {
+.btn--form {
     color: $primary-color;
     @include font(12px,14px,600);
     background-color: $primary-bg;
     padding: 18px 44px 17px 46px; 
+    width: 175px;
 }
 
 
-.form__btn:hover {
+.btn--form:hover {
     background: $body-bg;
     color: $title-color;
 }
@@ -54,7 +55,7 @@
     .name__input {
         width: 100%;
     }
-    .form__btn {
+    .btn--form {
         width: 100%;
      }
      .phone__input {

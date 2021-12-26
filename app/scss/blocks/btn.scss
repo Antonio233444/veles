@@ -11,7 +11,7 @@
     box-shadow: none;
     text-align: center;
     background-color: transparent;
-    transition:  background-color .3s ease;
+    transition:  background-color .4s ease;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -23,8 +23,15 @@
     padding: 19px 63px 19px 58px;
     margin-bottom: 73px;
     @include font(18px, 21px);
-    // max-width: 220px;
+    width: 220px;
 }
+
+@include mobile {
+    .btn--brand {
+        margin-bottom: 90px;
+    }
+}
+
 
 .btn--brand:hover {
    background: $body-bg;
@@ -32,15 +39,15 @@
 }
 
 
-.btn__rent {
+.btn--rent {
     @include font(12px, 14px, 700);
     color: $primary-color;
     background-color: $primary-bg;
     padding: 21px 30px 17px 30px;
-    // max-width: 250px;
+    width: 250px;
 }
 
-.btn__rent:hover {
+.btn--rent:hover {
     border: 1px solid $secondary-color;
     color: $secondary-color;
     background: $body-bg;
@@ -48,35 +55,37 @@
 
 
 @include mobile {
-    .btn__rent {
+    .btn--rent {
         width: 100%;
         margin-bottom: 90px;
     }
 }
 
 
-.btn__storage {
+.btn--storage {
     @include font(12px, 14px, 700);
     color: $primary-color;
     background-color: $primary-bg;
     padding: 21px 30px 17px 30px;
     border: 1px solid $primary-color;
-    // max-width: 250px;
+    width: 250px;
 }
 
 
-.btn__storage:hover {
+@include mobile {
+    .btn--storage {
+        width: 100%;
+    }
+}
+
+
+.btn--storage:hover {
     border: 1px solid $secondary-color;
     color: $secondary-color;
     background: $body-bg;
 }
 
 
-@include mobile {
-    .btn__storage {
-        width: 100%;
-    }
-}
 
 
 
