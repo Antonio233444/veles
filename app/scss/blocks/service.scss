@@ -1,7 +1,7 @@
 
 .service__container {
     margin-bottom: 14px;
-    padding-bottom: 79px;
+    padding-bottom: 43px;
 }
 
 
@@ -60,7 +60,7 @@
 }
 
 
-.square{
+.square {
     position: absolute;
     top: 0;
     left: 0;
@@ -108,8 +108,6 @@
 }
 
 
-
-
 @include mobile {
     .service__body {
         grid-template-columns: repeat(1 , 1fr);
@@ -117,10 +115,14 @@
 
     .service__title {
         text-align: center;
+        @include font(20px, 23px, 600);
+        margin-bottom: 48px;
     }
 
     .service__item-text {
         text-align: center;
+        @include font(16px, 21px, 600);
+        padding: 50px 50px 30px 20px;
     }
     .service__item:hover {
         transform: none;

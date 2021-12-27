@@ -6,6 +6,13 @@
     margin-bottom: 85px;
 }
 
+@include mobile {
+    .advantages__title {
+        @include font(20px, 23px, 600);
+        margin-bottom: 23px;
+    }
+}
+
 
 .advantages__body {
     display: flex;

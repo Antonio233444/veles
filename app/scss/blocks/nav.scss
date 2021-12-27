@@ -4,14 +4,14 @@
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .nav {
         text-align: center;
     }
 }
 
 
-@media screen and(max-width: $mobile) {
+@include mobile {
     .nav__item:not(:last-child) {
         margin-right: 0;
     }

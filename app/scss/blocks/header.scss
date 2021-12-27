@@ -2,9 +2,14 @@
     background-color: $primary-bg;
     padding-bottom: 40px;
     position: relative;
-    // overflow: hidden;
     margin-bottom: 207px;
     z-index: 1;
+}
+
+@include mobile {
+    .header {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -60,6 +65,13 @@
 }
 
 
+@include mobile{
+    .header__container {
+        margin-bottom: 74px;
+    }
+}
+
+
 
 .header__contacts {
     display: flex;
@@ -77,6 +89,13 @@
     display: inline-block;
     vertical-align: top;
     text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+
+.nav__item-link:hover {
+   text-decoration: underline;
+   transform: translateY(-10px);
 }
 
 .nav__item {
