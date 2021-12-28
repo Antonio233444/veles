@@ -37,7 +37,7 @@
 .slider__buttons {
     display: flex;
     justify-content: flex-end;
-    width: 50%;/*по умолчанию занимает сто процентов ширины,ставим половину*/
+    width: 50%;
     padding-right: 60px;
     @include tablet{
         width: 100%;
@@ -53,23 +53,23 @@
 
 
 .slider__wrap {
-    display: flex;/*для остальных слайдов?*/
+    display: flex;
 }
 
 
 .slider__slide {
     display: flex;
     gap: 47px;
-    flex-shrink: 0;/*слайд не должен сужаться,фактор уменьшения задаём ноль*/
+    flex-shrink: 0;
     width: 100%;
 }
 
 
 .slider__right {
-    position: absolute;/*позиционируем относительно хедера*/
-    right: 0;/*прибиваем элемент к правому краю страницы*/
+    position: absolute;
+    right: 0;
     top: 180px;
-    width: 50%;/*элемент будет занимать половину слайдера*/
+    width: 50%;
     overflow: hidden;
     @include tablet{
         left: 0;
@@ -94,9 +94,9 @@
 
 .slider__pic {
     display: block;
-    width: 100%;/*картинка будет занимать сто процентов ширины контейнера*/
-    height: 506px;/*нужно ли снова прописывать высоту?*/
-    object-fit: cover;/*адаптив для картинки*/
+    width: 100%;
+    height: 506px;
+    object-fit: cover;
     @include tablet{
        height: 100%;
     }
