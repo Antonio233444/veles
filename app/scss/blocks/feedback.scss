@@ -35,7 +35,7 @@
 }
 
 
-.name__input {
+.name__input, .phone__input{
     padding: 18px 60px 18px 20px;
     background-color: $input-bg;
     border: none;
@@ -43,6 +43,7 @@
     @include font(16px, 19px);
     opacity: .5;
 }
+
 
 @include mobile {
     .feedback__form-body {
@@ -64,11 +65,3 @@
 }
 
 
-.phone__input {
-    padding: 18px 60px 18px 20px;
-    background-color: $input-bg;
-    border: none;
-    outline: none;
-    @include font(16px, 18px);
-    opacity: .5;
-}
